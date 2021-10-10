@@ -1,0 +1,23 @@
+{
+  "name": "IPFS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package_win32_______________": "electron-packager ./ IPFS --executable-name=\"IPFS Drive\" --platform=win32 --ignore='.git' --ignore='.idea' --ignore='package-lock.json' --out ./dist --electron-version 10.1.3 --overwrite --icon=./public/favicon.ico",
+    "package_win32_asar": "electron-packager ./ IPFS --executable-name=\"IPFS Drive\" --platform=win32 --asar --extra-resource=./extra-resource --ignore='extra-resource' --ignore='.git' --ignore='.idea' --ignore='package-lock.json' --out ./dist --electron-version 10.1.3 --overwrite --icon=./public/favicon.ico",
+    "start-electron": "electron . --overwrite --icon=./public/favicon.ico"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-log": "^4.3.0",
+    "electron-updater": "^4.3.5"
+  },
+  "devDependencies": {
+    "electron": "10.1.3",
+    "electron-packager": "^15.1.0"
+  }
+}
