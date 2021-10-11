@@ -1,0 +1,13 @@
+1、rclone 构建
+
+	在项目目录执行
+	go get
+	go build -tags cmount
+2、rclone-ui 构建
+	在项目目录执行
+	npm install
+	npm build
+3、shell构建
+	将1部分产生的rclone.exe 和2部分 产生的build 文件夹复制到  extra-resource对应目录
+	执行npm run package_win32_
+	执行 npm run start-electron
