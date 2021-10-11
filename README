@@ -19,6 +19,7 @@ step3:需要构建Webui
 npm install
 
 npm build
+
 将产生的build文件夹复制到ipfsdrive项目extra-resource对应目录,如:win64/下
 	
 Step4:构建ipfsdrive
